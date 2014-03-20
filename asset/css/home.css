@@ -1,0 +1,66 @@
+*,body,html {
+	padding:0;
+	margin: 0;
+}
+.clear {
+	clear:both;
+}
+body {
+	font-family: Helvetica Neue;
+	font-weight: 300;
+}
+#titre{
+	text-align: center;
+	font-size:2em;
+	color:grey;
+}
+#enter a{
+	border:1px solid black;
+	padding:3px 6px 3px 6px;
+
+}
+header p {
+	padding:10px;
+	padding-left:40px;
+	font-size: 1.2em;
+	text-align: left;
+}
+header p a {
+	color:black;
+	text-decoration: none;
+}
+aside {
+	width:300px;
+}
+aside ul li {
+	font-size: 20px;
+	list-style: none;
+	padding:10px;
+	color:black;
+	
+}
+.background {
+	color:green;
+}
+td {
+	text-color:grey;
+	font-size:1.3em;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	font-family: Courier New;
+}
+
+.right{
+        width:50%;
+       opacity: 0;
+      }
+      .right:hover{
+        opacity: 0;
+      }
+       .left{
+        width:50%;
+        opacity: 0;
+      }
+      .left:hover{
+        opacity: 0;
+      }
