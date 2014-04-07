@@ -14,4 +14,5 @@
 
 	// Include la vue
 	include_once('view/admin/categorie.php');
+
  ?>

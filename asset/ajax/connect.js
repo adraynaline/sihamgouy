@@ -1,9 +1,9 @@
 $(document).ready(function(){
 	$('#formConnect').on('submit', function(){
-		var login = $('#login').val();
+		var log = $('#log').val();
 		var password = $('#password').val();
 
-	if( login == "" || password == ""){
+	if( log == "" || password == ""){
 		alert('Des champs sont incomplets');
 	} else{
 		$.ajax({
@@ -13,7 +13,7 @@ $(document).ready(function(){
                 dataType: 'json',
                 success: function(json) {
                     if(json.reponse == 'ok') { 
-                        window.setTimeout("location=('?appli=home&action=cat');");
+                        window.setTimeout("location=('?appli=admin&action=cat');");
                     } 
                     else {
                         alert('Erreur : '+ json.reponse);

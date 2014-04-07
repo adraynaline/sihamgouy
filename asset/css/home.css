@@ -13,6 +13,7 @@ body {
 	text-align: center;
 	font-size:2em;
 	color:grey;
+	cursor: pointer;
 }
 #enter a{
 	border:1px solid black;
@@ -31,16 +32,32 @@ header p a {
 }
 aside {
 	width:300px;
+	float:left;
 }
 aside ul li {
 	font-size: 20px;
 	list-style: none;
 	padding:10px;
+	width:200px;
+}
+aside ul li a {
 	color:black;
+	text-decoration: none;
+
+}
+aside ul li:hover a{
+	color:white;
+	text-decoration: none;
+}
+aside ul li:hover {
 	
+	background:black;
 }
 .background {
 	color:green;
+}
+#content_slider {
+	float:left;
 }
 td {
 	text-color:grey;
@@ -49,7 +66,14 @@ td {
 	letter-spacing: 1px;
 	font-family: Courier New;
 }
-
+.carousel-caption {
+	background:rgba(0,0,0,0.5);
+	
+}
+.carousel-caption p{
+	font-size:1.4em;
+	letter-spacing: 2px;
+}
 .right{
         width:50%;
        opacity: 0;

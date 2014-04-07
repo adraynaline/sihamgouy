@@ -6,7 +6,7 @@
       {
         script: 'model/admin/upload.php',
         allowedFileTypes: 'image/jpeg,image/png,image/gif',
-        maxSizeInBytes: 250000,
+        maxSizeInBytes: 5000000,
         customParams: {
           'custom': 'tester'
         },

@@ -1,7 +1,7 @@
 <?php
 function connect($login,$password)
 {
-	try
+	//*try*/
 	{	
 		global $connexion;
 			
@@ -11,7 +11,7 @@ function connect($login,$password)
 		$sql->bindValue(':password', md5($password), PDO::PARAM_STR);
 					
 		$sql->execute();
-		$verif = $sql->rowCount();
+		$verif_co = $sql->rowCount();
 		
 		$rows = $sql->fetchAll();
 
@@ -20,16 +20,16 @@ function connect($login,$password)
 		foreach ($rows as $row) {
 		
 		session_start();
-		$_SESSION["pseudo"] = $row['pseudo'];
+		$_SESSION["login"] = $row['login'];
 		$_SESSION["password"] = $row['password'];
 		
-		return $verif;
+		return $verif_co;
 				
 		}
 	}
-	catch(Exception $e)
+	/*catch(Exception $e)
 	{
 		echo "La requete n'a pas marché" ,$e->getMessage();
 		die();
 	}
-}
+}*/

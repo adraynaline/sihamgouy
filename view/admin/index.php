@@ -9,10 +9,10 @@
 <body>
 	<div id="login">
 		<p>Login Page</p>
-		<form method="post" action="?appli=admin&action=connect_controller.php" id="formConnect">
-			<input class="form-control" type="text" name="login" id="login" value="" placeholder="login" /><br/>
-			<input class="form-control" type="text" name="password" id="password" value="" placeholder="password" /><br/>
-			<button class="btn btn-default">Connect</button>
+		<form method="post" action="?appli=admin&action=connect_controller" id="formConnect">
+			<input class="form-control" type="text" name="login" id="log" value="" placeholder="login" /><br/>
+			<input class="form-control" type="password" name="password" id="password" value="" placeholder="password" /><br/>
+			<button type="submit" class="btn btn-default">Connect</button>
 		</form>
 	</div>
 	

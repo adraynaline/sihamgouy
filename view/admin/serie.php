@@ -86,7 +86,7 @@
 					<td><?php echo $serie['Id']; ?></td>
 					<td><a href="?appli=admin&action=images&serie=<?php echo $serie['Url']; ?>"><?php echo $serie['Nom']; ?></a></td>
 					<td><img height="100px" src="<?php echo $serie['Illustration']; ?>"></td>
-					<td><a class="delete_button" href="?appli=admin&action=serie&categorie=<?php echo $serie['Categorie_serie'] ?>&delete_serie=<?php echo $serie['Id']; ?>">DELETE</a></td>
+					<td><a class="delete_button" href="?appli=admin&action=serie&categorie=<?php echo $serie['Categorie_serie'] ?>&delete_serie=<?php echo $serie['Url']; ?>">DELETE</a></td>
 					<td><a class="update_button" href="">UPDATE</a></td>
 				</tr>
 	

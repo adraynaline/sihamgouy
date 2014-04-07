@@ -33,5 +33,5 @@
 		include_once($url);
 	}
 	else {
-		echo 'error';
+		echo 'erreur durl';
 	}

@@ -31,6 +31,7 @@
           	  <input type="file" name="fileUpload1" id="fileUpload1" class="fileUpload bt vert" />
           	  <input type="hidden" id="photo" name="photo" value="">
         	  <div id="previews"></div>
+        	  <div id="response"></div>
 		</div>
 		<input type="hidden" name="img_serie" id="img_serie" value="<?php echo $serie ?>">
 		<input type="hidden" id="url_redirect" value="?appli=admin&action=images&serie=<?php echo $serie;?>"> 

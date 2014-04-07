@@ -28,7 +28,13 @@ function add_serie($nom_serie, $url_serie, $categorie_serie, $image_serie){
 	}
 function delete_serie($delete_serie){
 		global $connexion;
-		$query = $connexion->prepare('DELETE FROM serie WHERE Id = :id ');
+		$query = $connexion->prepare('DELETE FROM serie WHERE Url = :id ');
+		$query->bindValue(':id', $delete_serie, PDO::PARAM_INT);
+		$query->execute();
+	}
+function delete_img_serie($delete_serie){
+		global $connexion;
+		$query = $connexion->prepare('DELETE FROM images WHERE Image_serie = :id ');
 		$query->bindValue(':id', $delete_serie, PDO::PARAM_INT);
 		$query->execute();
 	}

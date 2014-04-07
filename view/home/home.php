@@ -10,8 +10,33 @@
 			<!-- menu display block -->
 		</ul>
 	</aside>
-	<div id="content">
+	<div id="content_slider">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" height="500px">
+    
+  <!-- Wrapper for slides -->
+ 	
+  <div class="carousel-inner">	
+    <?php foreach ($imageshome as $images): ?>
+	    <div class="item">
+	    		
+	      <center><img height="400px" src="<?php echo $images['Illustration'];?>" alt="..."></center>
+	     
+	      <div class="carousel-caption">
+<p><?php echo $images['Nom'] ?></p>
 
-		<!-- SLIDER DERNIERE NOUVEAUTÉ - LIMIT 5 -->
+	      </div>
+	    </div>
+	     <?php endforeach; ?>
+	  </div>
+	 
+	  <!-- Controls -->
+	  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+	    
+	  </a>
+	  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+	    
+	  </a>
 	</div>
+	</div>
+	<div class="clear"></div>
 </div>

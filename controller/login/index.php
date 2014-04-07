@@ -3,7 +3,7 @@
 	if(isset($_POST['login']) && isset($_POST['password']))
 	{	
 		include_once('model/login/signin.php');
-		$verif = connect($_POST['login'], $_POST['password'], $_POST['box']);
+		$verif = connect($_POST['login'], $_POST['password']);
 		
 	
 	if($verif==0)

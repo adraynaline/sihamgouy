@@ -9,6 +9,7 @@
 <body>
 	<header>
 		<p>Siham G Administration</p>
+		<?php echo $_SESSION["login"].'tt'; ?>
 		<span><a href="?appli=admin&action=logout">Logout</a></span>
 		<div class="clear"></div>
 	</header>
